@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Каталог товаров - Houzzy</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <a class="header__logo-link" href="#" aria-label="Ссылка на главную страницу">
+          <svg class="header__logo-icon" width="110" height="40" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#logo-houzzy"></use>
+          </svg>
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Каталог</a>
+            </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Акции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Отзывы</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Доставка</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Оплата</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">События</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__user-list">
+          <a class="header__user-link" href="#" aria-label="Ссылка на поиск">
+            <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-search"></use>
+            </svg>
+          </a>
+          <a class="header__user-link" href="#" aria-label="Ссылка на Избранное">
+            <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-heart"></use>
+            </svg>
+          </a>
+          <a class="header__user-link" href="#" aria-label="Ссылка на Корзину">
+            <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-bag"></use>
+            </svg>
+          </a>
+          <a class="header__user-link" href="tel:88000000000" aria-label="Ссылка на телефон">
+            <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-phone"></use>
+            </svg>
+          </a>
+        </div>
+        <button class="header__burger" type="button" aria-label="Кнопка открытия мобильного меню">
+          <svg class="header__burger-icon" width="32" height="32" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Каталог</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Мягкая мебель</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item--active">
+            Кресла
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <section class="catalog">
+      <div class="container">
+        <h1 class="visually-hidden">Каталог кресел</h1>
+        <div class="catalog__wrap">
+          <h2 class="catalog__title">Кресла</h2>
+          <div class="catalog__wrapper">
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Кресла в мягкой обивке</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Дизайнерские кресла</a>
+              </li>
+              <li class="catalog__item">
+                <a class="catalog__link" href="#">Кресла без спинки</a>
+              </li>
+            </ul>
+            <div class="catalog__sorting">
+              <span class="catalog__text">Сортировать:</span>
+              <a class="catalog__sorting-link" href="#">Популярные</a>
+              <a class="catalog__sorting-link" href="#">
+                По возрастанию цены
+                <svg class="catalog__sorting-icon" viewBox="0 0 16 16" width="16" height="16" fill="none">
+                  <use xlink:href="images/sprite.svg#arrow-icon-2"></use>
+                </svg>
+              </a>
+              <a class="catalog__sorting-link" href="#">
+                По убыванию цены
+                <svg class="catalog__sorting-icon" viewBox="0 0 16 16" width="16" height="16" fill="none">
+                  <use xlink:href="images/sprite.svg#arrow-icon-1"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="catalog__options">
+              <svg class="catalog__options-icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="images/sprite.svg#options-icon"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <ul class="catalog__list-card">
+          <li class="catalog__item-card">
+            <div class="catalog__img-container" tabindex="0">
+              <picture class="catalog__responsive-image">
+                <source media="(max-width: 767px)"
+                  srcset="images/img-armchair/img-armchair-mobile.png 1x, images/img-armchair/img-armchair-mobile@2x.png 2x">
+                <source media="(max-width: 1439px)"
+                  srcset="images/img-armchair/img-armchair-tablet.png 1x, images/img-armchair/img-armchair-tablet@2x.png 2x">
+                <img class="catalog__img" src="images/img-armchair/img-armchair.png"
+                  srcset="images/img-armchair/img-armchair@2x.png 2x" alt="Картинка стула" width="320" height="400">
+              </picture>
+              <div class="catalog__overlay">
+                <span class="catalog__overlay-text">Подробнее</span>
+              </div>
+            </div>
+            <span class="catalog__sale">-20%</span>
+            <div class="catalog__branding">
+              <svg class="catalog__branding-icon" viewBox="0 0 68 20" width="68" height="20" fill="none" tabindex="0">
+                <use xlink:href="images/sprite.svg#icon-branding"></use>
+              </svg>
+              <div class="custom-checkbox__inner">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__filed visually-hidden custom-checkbox__filed-c1" type="checkbox" id="circle_1" name="choice">
+                  <label class="custom-checkbox__label" for="circle_1" tabindex="0"></label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__filed visually-hidden custom-checkbox__filed-c2" type="checkbox" id="circle_2" name="choice">
+                  <label class="custom-checkbox__label" for="circle_2" tabindex="0"></label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__filed visually-hidden custom-checkbox__filed-c3" type="checkbox" id="circle_3" name="choice">
+                  <label class="custom-checkbox__label" for="circle_3" tabindex="0"></label>
+                </div>
+              </div>
+            </div>
+            <span class="catalog__label">мягкая мебель</span>
+            <h3 class="catalog__subtitle" tabindex="0">Кресло nort cozy</h3>
+            <span class="catalog__price">
+              4 480 руб.
+              <span class="catalog__price-old">5 600 руб.</span>
+            </span>
+            <div class="catalog__card-btn">
+              <button class="catalog__btn-basket" type="button">
+                Добавить в корзину
+              </button>
+              <button class="catalog__btn-favorites" type="button" aria-label="Добавить в избранное">
+                <svg class="catalog__favorites-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#favorites-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="catalog__item-card">
+            <div class="catalog__img-container" tabindex="0">
+              <picture class="catalog__responsive-image">
+                <source media="(max-width: 767px)"
+                  srcset="images/img-armchair/img-armchair-2-mobile.png 1x, images/img-armchair/img-armchair-2-mobile@2x.png 2x">
+                <source media="(max-width: 1439px)"
+                  srcset="images/img-armchair/img-armchair-2-tablet.png 1x, images/img-armchair/img-armchair-2-tablet@2x.png 2x">
+                <img class="catalog__img" src="images/img-armchair/img-armchair-2.png"
+                  srcset="images/img-armchair/img-armchair-2@2x.png 2x" alt="Картинка стула" width="320" height="400">
+              </picture>
+              <div class="catalog__overlay">
+                <span class="catalog__overlay-text">Подробнее</span>
+              </div>
+            </div>
+            <span class="catalog__sale">-20%</span>
+            <div class="catalog__branding">
+              <svg class="catalog__branding-icon" viewBox="0 0 68 20" width="68" height="20" fill="none" tabindex="0">
+                <use xlink:href="images/sprite.svg#icon-branding"></use>
+              </svg>
+              <div class="custom-checkbox__inner">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__filed visually-hidden custom-checkbox__filed-c2" type="checkbox" id="circle_4" name="choice">
+                  <label class="custom-checkbox__label" for="circle_4" tabindex="0"></label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__filed visually-hidden custom-checkbox__filed-c4" type="checkbox" id="circle_5" name="choice">
+                  <label class="custom-checkbox__label" for="circle_5" tabindex="0"></label>
+                </div>
+              </div>
+            </div>
+            <span class="catalog__label">мягкая мебель</span>
+            <h3 class="catalog__subtitle" tabindex="0">Кресло pikont</h3>
+            <span class="catalog__price">
+              5 360 руб.
+              <span class="catalog__price-old">7 600 руб..</span>
+            </span>
+            <div class="catalog__card-btn">
+              <button class="catalog__btn-basket" type="button">
+                Добавить в корзину
+              </button>
+              <button class="catalog__btn-favorites" type="button" aria-label="Добавить в избранное">
+                <svg class="catalog__favorites-icon" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#favorites-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="catalog__item-card">
+            <div class="catalog__img-container" tabindex="0">
+              <picture class="catalog__responsive-image">
+                <source media="(max-width: 767px)"
+                  srcset="images/img-armchair/img-armchair-3-mobile.png 1x, images/img-armchair/img-armchair-3-mobile@2x.png 2x">
+                <source media="(max-width: 1439px)"
+                  srcset="images/img-armchair/img-armchair-3-tablet.png 1x, images/img-armchair/img-armchair-3-tablet@2x.png 2x">
+                <img class="catalog__img" src="images/img-armchair/img-armchair-3.png"
+                  srcset="images/img-armchair/img-armchair-3@2x.png 2x" alt="Картинка стула" width="320" height="400">
+              </picture>
+              <div class="catalog__overlay">
+                <span class="catalog__overlay-text">Подробнее</span>
+              </div>
+            </div>
+            <div class="catalog__branding">
+              <svg class="catalog__branding-icon" viewBox="0 0 68 20" width="68" height="20" fill="none" tabindex="0">
+                <use xlink:href="images/sprite.svg#icon-branding"></use>
+              </svg>
+              <div class="custom-checkbox__inner">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__filed visually-hidden custom-checkbox__filed-c1" type="checkbox" id="circle_6" name="choice">
+                  <label class="custom-checkbox__label" for="circle_6" tabindex="0"></label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__filed visually-hidden custom-checkbox__filed-c4" type="checkbox" id="circle_7" name="choice">
+                  <label class="custom-checkbox__label" for="circle_7" tabindex="0"></label>
+                </div>
+              </div>
+            </div>
+            <span class="catalog__label">мягкая мебель</span>
+            <h3 class="catalog__subtitle" tabindex="0">Кресло heavy suite</h3>
+            <span class="catalog__price">
+              9 200 руб.
+            </span>
+            <div class="catalog__card-btn">
+              <button class="catalog__btn-basket" type="button">
+                Добавить в корзину
+              </button>
+              <button class="catalog__btn-favorites" type="button" aria-label="Добавить в избранное">
+                <svg class="catalog__favorites-icon" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#favorites-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="catalog__item-card">
+            <div class="catalog__img-container" tabindex="0">
+              <picture class="catalog__responsive-image">
+                <source media="(max-width: 767px)"
+                  srcset="images/img-armchair/img-armchair-4-mobile.png 1x, images/img-armchair/img-armchair-4-mobile@2x.png 2x">
+                <source media="(max-width: 1439px)"
+                  srcset="images/img-armchair/img-armchair-4-tablet.png 1x, images/img-armchair/img-armchair-4-tablet@2x.png 2x">
+                <img class="catalog__img" src="images/img-armchair/img-armchair-4.png"
+                  srcset="images/img-armchair/img-armchair-4@2x.png 2x" alt="Картинка стула" width="320" height="400">
+              </picture>
+              <div class="catalog__overlay">
+                <span class="catalog__overlay-text">Подробнее</span>
+              </div>
+            </div>
+            <span class="catalog__sale">-20%</span>
+            <div class="catalog__branding">
+              <svg class="catalog__branding-icon" viewBox="0 0 68 20" width="68" height="20" fill="none" tabindex="0">
+                <use xlink:href="images/sprite.svg#icon-branding"></use>
+              </svg>
+              <div class="custom-checkbox__inner">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__filed visually-hidden custom-checkbox__filed-c1" type="checkbox" id="circle_8" name="choice">
+                  <label class="custom-checkbox__label" for="circle_8" tabindex="0"></label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__filed visually-hidden custom-checkbox__filed-c5" type="checkbox" id="circle_9" name="choice">
+                  <label class="custom-checkbox__label" for="circle_9" tabindex="0"></label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__filed visually-hidden custom-checkbox__filed-c4" type="checkbox" id="circle_10" name="choice">
+                  <label class="custom-checkbox__label" for="circle_10" tabindex="0"></label>
+                </div>
+              </div>
+            </div>
+            <span class="catalog__label">мягкая мебель</span>
+            <h3 class="catalog__subtitle" tabindex="0">Кресло sea breeze</h3>
+            <span class="catalog__price">
+              3 360 руб.
+              <span class="catalog__price-old">4 200 руб.</span>
+            </span>
+            <div class="catalog__card-btn">
+              <button class="catalog__btn-basket" type="button">
+                Добавить в корзину
+              </button>
+              <button class="catalog__btn-favorites" type="button" aria-label="Добавить в избранное">
+                <svg class="catalog__favorites-icon" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#favorites-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="catalog__item-card">
+            <div class="catalog__img-container" tabindex="0">
+              <picture class="catalog__responsive-image">
+                <source media="(max-width: 767px)"
+                  srcset="images/img-armchair/img-armchair-5-mobile.png 1x, images/img-armchair/img-armchair-5-mobile@2x.png 2x">
+                <source media="(max-width: 1439px)"
+                  srcset="images/img-armchair/img-armchair-5-tablet.png 1x, images/img-armchair/img-armchair-5-tablet@2x.png 2x">
+                <img class="catalog__img" src="images/img-armchair/img-armchair-5.png"
+                  srcset="images/img-armchair/img-armchair-5@2x.png 2x" alt="Картинка стула" width="320" height="400">
+              </picture>
+              <div class="catalog__overlay">
+                <span class="catalog__overlay-text">Подробнее</span>
+              </div>
+            </div>
+            <span class="catalog__sale">-20%</span>
+            <div class="catalog__branding">
+              <svg class="catalog__branding-icon" viewBox="0 0 68 20" width="68" height="20" fill="none" tabindex="0">
+                <use xlink:href="images/sprite.svg#icon-branding"></use>
+              </svg>
+              <div class="custom-checkbox__inner">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__filed visually-hidden custom-checkbox__filed-c2" type="checkbox" id="circle_11" name="choice">
+                  <label class="custom-checkbox__label" for="circle_11" tabindex="0"></label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__filed visually-hidden custom-checkbox__filed-c4" type="checkbox" id="circle_12" name="choice">
+                  <label class="custom-checkbox__label" for="circle_12" tabindex="0"></label>
+                </div>
+              </div>
+            </div>
+            <span class="catalog__label">мягкая мебель</span>
+            <h3 class="catalog__subtitle" tabindex="0">Кресло mafiafamily</h3>
+            <span class="catalog__price">
+              9 960 руб.
+              <span class="catalog__price-old">12 450 руб.</span>
+            </span>
+            <div class="catalog__card-btn">
+              <button class="catalog__btn-basket" type="button">
+                Добавить в корзину
+              </button>
+              <button class="catalog__btn-favorites" type="button" aria-label="Добавить в избранное">
+                <svg class="catalog__favorites-icon" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#favorites-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="catalog__item-card">
+            <div class="catalog__img-container" tabindex="0">
+              <picture class="catalog__responsive-image">
+                <source media="(max-width: 767px)"
+                  srcset="images/img-armchair/img-armchair-6-mobile.png 1x, images/img-armchair/img-armchair-6-mobile@2x.png 2x">
+                <source media="(max-width: 1439px)"
+                  srcset="images/img-armchair/img-armchair-6-tablet.png 1x, images/img-armchair/img-armchair-6-tablet@2x.png 2x">
+                <img class="catalog__img" src="images/img-armchair/img-armchair-6.png"
+                  srcset="images/img-armchair/img-armchair-6@2x.png 2x" alt="Картинка стула" width="320" height="400">
+              </picture>
+              <div class="catalog__overlay">
+                <span class="catalog__overlay-text">Подробнее</span>
+              </div>
+            </div>
+            <div class="catalog__branding">
+              <svg class="catalog__branding-icon" viewBox="0 0 68 20" width="68" height="20" fill="none" tabindex="0">
+                <use xlink:href="images/sprite.svg#icon-branding"></use>
+              </svg>
+              <div class="custom-checkbox__inner">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__filed visually-hidden custom-checkbox__filed-c3" type="checkbox" id="circle_13" name="choice">
+                  <label class="custom-checkbox__label" for="circle_13" tabindex="0"></label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__filed visually-hidden custom-checkbox__filed-c4" type="checkbox" id="circle_14" name="choice">
+                  <label class="custom-checkbox__label" for="circle_14" tabindex="0"></label>
+                </div>
+              </div>
+            </div>
+            <span class="catalog__label">мягкая мебель</span>
+            <h3 class="catalog__subtitle" tabindex="0">Кресло noilfo</h3>
+            <span class="catalog__price">
+              7 860 руб.
+            </span>
+            <div class="catalog__card-btn">
+              <button class="catalog__btn-basket" type="button">
+                Добавить в корзину
+              </button>
+              <button class="catalog__btn-favorites" type="button" aria-label="Добавить в избранное">
+                <svg class="catalog__favorites-icon" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#favorites-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="catalog__item-card">
+            <div class="catalog__img-container" tabindex="0">
+              <picture class="catalog__responsive-image">
+                <source media="(max-width: 767px)"
+                  srcset="images/img-armchair/img-armchair-7-mobile.png 1x, images/img-armchair/img-armchair-7-mobile@2x.png 2x">
+                <source media="(max-width: 1439px)"
+                  srcset="images/img-armchair/img-armchair-7-tablet.png 1x, images/img-armchair/img-armchair-7-tablet@2x.png 2x">
+                <img class="catalog__img" src="images/img-armchair/img-armchair-7.png"
+                  srcset="images/img-armchair/img-armchair-7@2x.png 2x" alt="Картинка стула" width="320" height="400">
+              </picture>
+              <div class="catalog__overlay">
+                <span class="catalog__overlay-text">Подробнее</span>
+              </div>
+            </div>
+            <span class="catalog__sale">-20%</span>
+            <div class="catalog__branding">
+              <svg class="catalog__branding-icon" viewBox="0 0 68 20" width="68" height="20" fill="none" tabindex="0">
+                <use xlink:href="images/sprite.svg#icon-branding"></use>
+              </svg>
+              <div class="custom-checkbox__inner">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__filed visually-hidden custom-checkbox__filed-c5" type="checkbox" id="circle_15" name="choice">
+                  <label class="custom-checkbox__label" for="circle_15" tabindex="0"></label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__filed visually-hidden custom-checkbox__filed-c4" type="checkbox" id="circle_16" name="choice">
+                  <label class="custom-checkbox__label" for="circle_16" tabindex="0"></label>
+                </div>
+              </div>
+            </div>
+            <span class="catalog__label">мягкая мебель</span>
+            <h3 class="catalog__subtitle" tabindex="0">Кресло sunbot</h3>
+            <span class="catalog__price">
+              3 880 руб.
+            </span>
+            <div class="catalog__card-btn">
+              <button class="catalog__btn-basket" type="button">
+                Добавить в корзину
+              </button>
+              <button class="catalog__btn-favorites" type="button" aria-label="Добавить в избранное">
+                <svg class="catalog__favorites-icon" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#favorites-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="catalog__item-card">
+            <div class="catalog__img-container" tabindex="0">
+              <picture class="catalog__responsive-image">
+                <source media="(max-width: 767px)"
+                  srcset="images/img-armchair/img-armchair-8-mobile.png 1x, images/img-armchair/img-armchair-8-mobile@2x.png 2x">
+                <source media="(max-width: 1439px)"
+                  srcset="images/img-armchair/img-armchair-8-tablet.png 1x, images/img-armchair/img-armchair-8-tablet@2x.png 2x">
+                <img class="catalog__img" src="images/img-armchair/img-armchair-8.png"
+                  srcset="images/img-armchair/img-armchair-8@2x.png 2x" alt="Картинка стула" width="320" height="400">
+              </picture>
+              <div class="catalog__overlay">
+                <span class="catalog__overlay-text">Подробнее</span>
+              </div>
+            </div>
+            <span class="catalog__sale">-20%</span>
+            <div class="catalog__branding">
+              <svg class="catalog__branding-icon" viewBox="0 0 68 20" width="68" height="20" fill="none" tabindex="0">
+                <use xlink:href="images/sprite.svg#icon-branding"></use>
+              </svg>
+              <div class="custom-checkbox__inner">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__filed visually-hidden custom-checkbox__filed-c3" type="checkbox" id="circle_17" name="choice">
+                  <label class="custom-checkbox__label" for="circle_17" tabindex="0"></label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__filed visually-hidden custom-checkbox__filed-c5" type="checkbox" id="circle_18" name="choice">
+                  <label class="custom-checkbox__label" for="circle_18" tabindex="0"></label>
+                </div>
+              </div>
+            </div>
+            <span class="catalog__label">мягкая мебель</span>
+            <h3 class="catalog__subtitle" tabindex="0">Кресло dromsa</h3>
+            <span class="catalog__price">
+              7 120 руб.
+              <span class="catalog__price-old">8 900 руб.</span>
+            </span>
+            <div class="catalog__card-btn">
+              <button class="catalog__btn-basket" type="button">
+                Добавить в корзину
+              </button>
+              <button class="catalog__btn-favorites" type="button" aria-label="Добавить в избранное">
+                <svg class="catalog__favorites-icon" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#favorites-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <div class="catalog__form-content">
+          <p class="catalog__form-text">Подпишитесь на&nbsp;рассылку и&nbsp;получите <span
+              class="catalog__form-subtext">500 бонусных баллов</span>
+            на&nbsp;первую покупку</p>
+          <form class="catalog__form" action="#" method="POST">
+            <div class="custom-input custom-input--erro">
+              <input class="custom-input__field" type="email" name="user-mail" id="user-mail" placeholder="E-mail">
+              <label class="custom-input__label" for="user-mail">Электронная почта</label>
+              <span class="custom-input__error">Поле заполнено некорректно</span>
+              <p class="custom-input__privacy">Подписываясь на&nbsp;рассылку, я&nbsp;соглашаюсь с&nbsp;условиями
+                <a class="custom-input__link" href="#">Политики
+                  конфиденциальности</a>
+              </p>
+            </div>
+            <button class="catalog__form-btn" type="submit">Подписаться</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="recently-viewed">
+      <div class="container">
+        <h2 class="recently-viewed__title">Недавно просмотренное</h2>
+        <ul class="recently-viewed__list">
+          <li class="recently-viewed__item">
+            <div class="recently-viewed__img-container" tabindex="0">
+              <picture class="recently-viewed__responsive-image">
+                <source media="(max-width: 767px)"
+                  srcset="images/img-recent/img-chair-mobile.png 1x, images/img-recent/img-chair-mobile@2x.png 2x">
+                <source media="(max-width: 1439px)"
+                  srcset="images/img-recent/img-chair-tablet.png 1x, images/img-recent/img-chair-tablet@2x.png 2x">
+                <img class="recently-viewed__img" src="images/img-recent/img-chair.png"
+                  srcset="images/img-recent/img-chair@2x.png 2x" alt="Картинка стула" width="220" height="280">
+              </picture>
+              <div class="recently-viewed__overlay">
+                <span class="recently-viewed__overlay-text">Подробнее</span>
+              </div>
+            </div>
+            <span class="recently-viewed__sale">-20%</span>
+            <h3 class="recently-viewed__subtitle" tabindex="0">Стул Mandarin</h3>
+            <span class="recently-viewed__price">
+              9 960 руб.
+              <span class="recently-viewed__price-old">12 450 руб.</span>
+            </span>
+            <div class="recently-viewed__card-btn">
+              <button class="recently-viewed__btn-basket" type="button">
+                Добавить в корзину
+              </button>
+              <button class="recently-viewed__btn-favorites" type="button" aria-label="Добавить в избранное">
+                <svg class="recently-viewed__favorites-icon" viewBox="0 0 20 20" width="20" height="20"
+                  aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#favorites-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="recently-viewed__item">
+            <div class="recently-viewed__img-container" tabindex="0">
+              <picture class="recently-viewed__responsive-image">
+                <source media="(max-width: 767px)"
+                  srcset="images/img-recent/img-floor-lamp-mobile.png 1x, images/img-recent/img-floor-lamp-mobile@2x.png 2x">
+                <source media="(max-width: 1439px)"
+                  srcset="images/img-recent/img-floor-lamp-tablet.png 1x, images/img-recent/img-floor-lamp-tablet@2x.png 2x">
+                <img class="recently-viewed__img" src="images/img-recent/img-floor-lamp.png"
+                  srcset="images/img-recent/img-floor-lamp@2x.png 2x" alt="Картинка торшер" width="220" height="280">
+              </picture>
+              <div class="recently-viewed__overlay">
+                <span class="recently-viewed__overlay-text">Подробнее</span>
+              </div>
+            </div>
+            <h3 class="recently-viewed__subtitle" tabindex="0">Торшер Womromo</h3>
+            <span class="recently-viewed__price">
+              2 450 руб.
+            </span>
+            <div class="recently-viewed__card-btn">
+              <button class="recently-viewed__btn-basket" type="button">
+                Добавить в корзину
+              </button>
+              <button class="recently-viewed__btn-favorites" type="button" aria-label="Добавить в избранное">
+                <svg class="recently-viewed__favorites-icon" viewBox="0 0 20 20" width="20" height="20"
+                  aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#favorites-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="recently-viewed__item">
+            <div class="recently-viewed__img-container" tabindex="0">
+              <picture class="recently-viewed__responsive-image">
+                <source media="(max-width: 767px)"
+                  srcset="images/img-recent/img-chair-2-mobile.png 1x, images/img-recent/img-chair-2-mobile@2x.png 2x">
+                <source media="(max-width: 1439px)"
+                  srcset="images/img-recent/img-chair-2-tablet.png 1x, images/img-recent/img-chair-2-tablet@2x.png 2x">
+                <img class="recently-viewed__img" src="images/img-recent/img-chair-2.png"
+                  srcset="images/img-recent/img-chair-2@2x.png 2x" alt="Картинка стула" width="220" height="280">
+              </picture>
+              <div class="recently-viewed__overlay">
+                <span class="recently-viewed__overlay-text">Подробнее</span>
+              </div>
+            </div>
+            <h3 class="recently-viewed__subtitle" tabindex="0">Стул Olimpia</h3>
+            <span class="recently-viewed__price">
+              4 890 руб.
+            </span>
+            <div class="recently-viewed__card-btn">
+              <button class="recently-viewed__btn-basket" type="button">
+                Добавить в корзину
+              </button>
+              <button class="recently-viewed__btn-favorites" type="button" aria-label="Добавить в избранное">
+                <svg class="recently-viewed__favorites-icon" viewBox="0 0 20 20" width="20" height="20"
+                  aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#favorites-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="recently-viewed__item">
+            <div class="recently-viewed__img-container" tabindex="0">
+              <picture class="recently-viewed__responsive-image">
+                <source media="(max-width: 767px)"
+                  srcset="images/img-recent/img-vase-mobile.png 1x, images/img-recent/img-vase-mobile@2x.png 2x">
+                <source media="(max-width: 1439px)"
+                  srcset="images/img-recent/img-vase-tablet.png 1x, images/img-recent/img-vase-tablet@2x.png 2x">
+                <img class="recently-viewed__img" src="images/img-recent/img-vase.png"
+                  srcset="images/img-recent/img-vase@2x.png 2x" alt="Картинка ваза" width="220" height="280">
+              </picture>
+              <div class="recently-viewed__overlay">
+                <span class="recently-viewed__overlay-text">Подробнее</span>
+              </div>
+            </div>
+            <h3 class="recently-viewed__subtitle" tabindex="0">Стеклянная ваза Turefa</h3>
+            <span class="recently-viewed__price">
+              2 368 руб.
+            </span>
+            <div class="recently-viewed__card-btn">
+              <button class="recently-viewed__btn-basket" type="button">
+                Добавить в корзину
+              </button>
+              <button class="recently-viewed__btn-favorites" type="button" aria-label="Добавить в избранное">
+                <svg class="recently-viewed__favorites-icon" viewBox="0 0 20 20" width="20" height="20"
+                  aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#favorites-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="recently-viewed__item">
+            <div class="recently-viewed__img-container" tabindex="0">
+              <picture class="recently-viewed__responsive-image">
+                <source media="(max-width: 767px)"
+                  srcset="images/img-recent/img-table-mobile.png 1x, images/img-recent/img-table-mobile@2x.png 2x">
+                <source media="(max-width: 1439px)"
+                  srcset="images/img-recent/img-table-tablet.png 1x, images/img-recent/img-table-tablet@2x.png 2x">
+                <img class="recently-viewed__img" src="images/img-recent/img-table.png"
+                  srcset="images/img-recent/img-table@2x.png 2x" alt="Картинка стол" width="220" height="280">
+              </picture>
+              <div class="recently-viewed__overlay">
+                <span class="recently-viewed__overlay-text">Подробнее</span>
+              </div>
+            </div>
+            <span class="recently-viewed__sale">-20%</span>
+            <h3 class="recently-viewed__subtitle" tabindex="0">Стол Agnesia</h3>
+            <span class="recently-viewed__price">
+              7 120 руб.
+              <span class="recently-viewed__price-old">8 900 руб.</span>
+            </span>
+            <div class="recently-viewed__card-btn">
+              <button class="recently-viewed__btn-basket" type="button">
+                Добавить в корзину
+              </button>
+              <button class="recently-viewed__btn-favorites" type="button" aria-label="Добавить в избранное">
+                <svg class="recently-viewed__favorites-icon" viewBox="0 0 20 20" width="20" height="20"
+                  aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#favorites-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="recently-viewed__item">
+            <div class="recently-viewed__img-container" tabindex="0">
+              <picture class="recently-viewed__responsive-image">
+                <source media="(max-width: 767px)"
+                  srcset="images/img-recent/img-vase-2-mobile.png 1x, images/img-recent/img-vase-2-mobile@2x.png 2x">
+                <source media="(max-width: 1439px)"
+                  srcset="images/img-recent/img-vase-2-tablet.png 1x, images/img-recent/img-vase-2-tablet@2x.png 2x">
+                <img class="recently-viewed__img" src="images/img-recent/img-vase-2.png"
+                  srcset="images/img-recent/img-vase-2@2x.png 2x" alt="Картинка ваза" width="220" height="280">
+              </picture>
+              <div class="recently-viewed__overlay">
+                <span class="recently-viewed__overlay-text">Подробнее</span>
+              </div>
+            </div>
+            <h3 class="recently-viewed__subtitle">Ваза керамика Agisa</h3>
+            <span class="recently-viewed__price">
+              1 800 руб.
+            </span>
+            <div class="recently-viewed__card-btn">
+              <button class="recently-viewed__btn-basket" type="button">
+                Добавить в корзину
+              </button>
+              <button class="recently-viewed__btn-favorites" type="button" aria-label="Добавить в избранное">
+                <svg class="recently-viewed__favorites-icon" viewBox="0 0 20 20" width="20" height="20"
+                  aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#favorites-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content-block">
+        <div class="footer__nav-block">
+          <div class="footer__nav">
+            <p class="footer__title">Покупателям</p>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Как сделать заказ</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Доставка</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Оплата</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Каталог</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Коллекции</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Отзывы </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav">
+            <p class="footer__title">О houzzy</p>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">О компании</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Сотрудничество</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Вакансии</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">События</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Контакты</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Реквизиты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <p class="footer__title">Контактная информация</p>
+          <div class="footer__address">
+            <span class="footer__text">г. Красноярск, ул. Декабристов 19а</span>
+            <a class="footer__link" href="tel:88000000000">8 (800) 000-00-00</a>
+          </div>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Ссылка на Whatsapp">
+                <svg class="social__link-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-wa"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Ссылка на Телеграм">
+                <svg class="social__link-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-tg"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Ссылка на ВК">
+                <svg class="social__link-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Ссылка на YouTube">
+                <svg class="social__link-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-yt"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__legal-block">
+        <div class="footer__legal-inner">
+          <a class="footer__legal-link" href="#">Пользовательское соглашение и&nbsp;условия</a>
+          <p class="footer__legal-text">&copy;&nbsp;Houzzy, 2024. Информация на&nbsp;сайте не&nbsp;является офертой
+            и&nbsp;носит информационный характер</p>
+          <a class="footer__legal-link" href="#">Обработка персональных данных</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

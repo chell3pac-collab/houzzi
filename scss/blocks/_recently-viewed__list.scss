@@ -1,0 +1,33 @@
+.recently-viewed {
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+
+        @media screen and (max-width:1095px) {
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            gap: 30px 9px;
+        }
+
+        @include vp-1023 {
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            min-width: 708px;
+            gap: 28px 9px;
+        }
+
+        @include vp-767 {
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 18px 10px;
+            min-width: 320px;
+        }
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+}

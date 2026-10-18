@@ -1,0 +1,84 @@
+.custom-input {
+    width: 340px;
+
+    @include vp-767 {
+        width: 100%;
+    }
+
+    &__field {
+        padding: 0;
+        margin: 0 0 10px;
+        width: 340px;
+        border: none;
+        background-color: $color-light-shade-gray;
+        border-bottom: 1px solid $color-olive-gray;
+        min-height: 32px;
+        transform: translateY(-3px);
+
+        @include vp-767 {
+            width: 100%;
+        }
+    }
+
+    &__field::placeholder {
+        font-size: 16px;
+        line-height: 22px;
+        color: $color-bokara-grey;
+
+        @include vp-767 {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    &__field:hover::placeholder {
+        color: $color-cloudy;
+
+    }
+
+    &__field:hover {
+        border-bottom: 1px solid $color-moon-mist;
+    }
+
+    &__field:focus-visible::placeholder {
+        color: $color-cloudy;
+    }
+
+    &__field:focus-visible {
+        outline: none;
+        border-bottom: 1px solid $color-moon-mist;
+    }
+
+    &__error {
+        font-size: 12px;
+        line-height: 16px;
+        color: $color-red;
+        display: none;
+    }
+
+    &--error &__error {
+        display: block;
+    }
+
+    &__label {
+        display: none;
+    }
+
+    &__privacy {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        color: $color-olive-gray;
+        margin: 0;
+
+        @include vp-767 {
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+
+    &__link {
+        color: $color-olive-gray;
+        text-decoration: underline;
+    }
+}
